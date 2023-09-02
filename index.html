@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="styles.css">
+    <script type="module" src="index.js" defer></script>
+     <title>Country Finder</title>
+</head>
+<body>
+        <header>
+        <h1 id="title">Where In The World ?</h1>
+        <button id="theme_mode"><img src="dark-mode.svg" alt="dark-mode"><b>Dark Mode</b></button>
+     </header>
+    <hr>
+
+
+    <!-- Loading screen feature -->
+           <section class="loading-container" id="loading-screen">
+            <div class="loader" style="font-size:60px;">🌍</div>
+           </section>
+
+    <!-- Main Screen Content -->
+     <section id = 'main_content'>
+
+         <!-- filter  elements -->
+         <div id="filter">
+                    <div class="search-container">
+                     <img src="search-thin.svg" alt="Search"  class="search-icon">
+                     <input type="search"  class="search-input" id="filter_by_name" placeholder="Search Country...">
+                    </div>              
+              
+                     <select id="filter_by_continent">
+                         <option value="">--Select--</option>
+                         <option value="Africa">Africa</option>
+                         <option value="Americas">Americas</option>
+                         <option value="Asia">Asia</option>
+                         <option value="Europe">Europe</option>
+                         <option value="Oceania">Oceania</option>
+
+                     </select>
+            </div>  
+
+    <!-- container for the countries -->
+            <div id="content">
+            </div>
+
+            
+      </section>
+
+<!-- <footer>
+  <p>Designed with ❤️ by <a href="https://github.com/anyiamvictor" target="_blank">anyiamvictor</a></p>
+  <p>Credit to the API providers: <a href="https://restcountries.com/" target="_blank">restcountries.com</a></p>
+</footer> -->
+
+ </body>
+</html>
